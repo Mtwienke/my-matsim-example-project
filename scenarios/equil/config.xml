@@ -29,6 +29,16 @@
 		<param name = "snapshotperiod"	value = "00:00:00"/> <!-- 00:00:00 means NO snapshot writing -->
 	</module>
 
+	<module name="drt">
+		<param name="useDrt" value="true"/>
+		<param name="drtFleetFile" value="path/to/drtVehicles.xml"/>
+		<param name="maxWaitTime" value="900"/> <!-- Maximal erlaubte Wartezeit in Sekunden -->
+		<param name="maxTravelTimeAlpha" value="1.5"/> <!-- Faktor zur Reisezeitberechnung -->
+		<param name="maxTravelTimeBeta" value="600"/> <!-- Zusatz zur Reisezeitberechnung -->
+		<param name="stopDuration" value="60"/> <!-- Dauer des Stopps zum Ein-/Aussteigen -->
+	</module>
+
+
 	<module name="planCalcScore">
 		<param name="learningRate" value="1.0" />
 		<param name="BrainExpBeta" value="2.0" />
@@ -61,6 +71,9 @@
 
 		<param name="ModuleProbability_2" value="0.1" />
 		<param name="Module_2" value="ReRoute" />
+	</module>
+	<module name="vehicles" >
+		<param name="vehiclesFile" value="./vehicles.xml" />
 	</module>
 
 </config>

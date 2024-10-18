@@ -1,0 +1,17 @@
+<vehicles>
+    <vehicle id="drt_taxi_1" type="drt_vehicle_type">
+        <capacity>
+            <seats persons="4"/>
+        </capacity>
+    </vehicle>
+    <vehicleType id="drt_vehicle_type">
+        <description>On-Demand Taxi</description>
+        <length>4.5</length>
+        <width>2.0</width>
+        <capacity>
+            <seats persons="4"/>
+        </capacity>
+        <accessTime value="1"/>
+        <egressTime value="1"/>
+    </vehicleType>
+</vehicles>

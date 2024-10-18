@@ -20,7 +20,12 @@ hs_err_pid*
 /output/
 /test/output/
 /bin/
-
 # IntelliJ
 /.idea/
 *.iml
+
+
+
+*.osm.pbf
+.osm.pbf
+/Users/markuswienkemeier/Desktop/Uni/BA_neu/MatSim/my-matsim-example-project/original-input-data/detmold-regbez-latest.osm.pbf

@@ -1,0 +1,54 @@
+2024-08-21T09:52:54,739  WARN PrepareForSimImpl:268 'usePersonIdForMissingVehicleId' is deprecated. It will be removed soon.
+2024-08-21T09:52:54,747  WARN RandomizingTimeDistanceTravelDisutilityFactory:113 There will be no routing randomness. The randomization of the travel disutility requires the monetary distance rate to be different than zero. Continuing anyway.
+2024-08-21T09:52:54,747  WARN RandomizingTimeDistanceTravelDisutilityFactory:118 There will be no routing randomness. The randomization of the travel disutility requires the travel time cost rate to be different than zero. Continuing anyway.
+2024-08-21T09:52:54,812  WARN QueueWithBuffer:500 Link 1 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2024-08-21T09:52:54,813  WARN QueueWithBuffer:500 Link 20 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2024-08-21T09:52:54,813  WARN QueueWithBuffer:500 Link 21 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2024-08-21T09:52:54,813  WARN QueueWithBuffer:500 Link 22 too small: enlarge storage capacity from: 4666.666666666667 Vehicles to: 12598.99208063355 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2024-08-21T09:52:54,813  WARN QueueWithBuffer:500 Link 23 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2024-08-21T09:52:56,164  WARN QueueWithBuffer:500 Link 1 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2024-08-21T09:52:56,164  WARN QueueWithBuffer:500 Link 20 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2024-08-21T09:52:56,164  WARN QueueWithBuffer:500 Link 21 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2024-08-21T09:52:56,164  WARN QueueWithBuffer:500 Link 22 too small: enlarge storage capacity from: 4666.666666666667 Vehicles to: 12598.99208063355 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2024-08-21T09:52:56,164  WARN QueueWithBuffer:500 Link 23 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2024-08-21T09:52:56,865  WARN QueueWithBuffer:500 Link 1 too small: enlarge storage capacity from: 1333.3333333333333 Vehicles to: 3599.712023038157 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2024-08-21T09:52:56,865  WARN QueueWithBuffer:503 Additional warnings of this type are suppressed.
+2024-08-21T09:53:03,985  WARN MGC:179 Assuming that coordinates are in longitude first notation, i.e. (longitude, latitude).
+2024-08-21T09:53:04,269 ERROR CommandRunner:98 Command class org.matsim.application.prepare.network.CreateGeoJsonNetwork threw an error.
+java.lang.IllegalArgumentException: org.opengis.referencing.NoSuchAuthorityCodeException: No authority was defined for code "ATLANTIS". Did you forget "AUTHORITY:NUMBER"?
+	at org.matsim.core.utils.geometry.geotools.MGC.getCRS(MGC.java:182) ~[matsim-2024.0.jar:?]
+	at org.matsim.core.utils.geometry.transformations.GeotoolsTransformation.<init>(GeotoolsTransformation.java:56) ~[matsim-2024.0.jar:?]
+	at org.matsim.core.utils.geometry.transformations.TransformationFactory.getCoordinateTransformation(TransformationFactory.java:82) ~[matsim-2024.0.jar:?]
+	at org.matsim.application.prepare.network.CreateGeoJsonNetwork.call(CreateGeoJsonNetwork.java:110) ~[application-2024.0.jar:?]
+	at org.matsim.application.prepare.network.CreateGeoJsonNetwork.call(CreateGeoJsonNetwork.java:32) ~[application-2024.0.jar:?]
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2041) ~[picocli-4.7.5.jar:4.7.5]
+	at picocli.CommandLine.access$1500(CommandLine.java:148) ~[picocli-4.7.5.jar:4.7.5]
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2461) ~[picocli-4.7.5.jar:4.7.5]
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2453) ~[picocli-4.7.5.jar:4.7.5]
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2415) ~[picocli-4.7.5.jar:4.7.5]
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2273) ~[picocli-4.7.5.jar:4.7.5]
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2417) ~[picocli-4.7.5.jar:4.7.5]
+	at picocli.CommandLine.execute(CommandLine.java:2170) ~[picocli-4.7.5.jar:4.7.5]
+	at org.matsim.application.MATSimAppCommand.execute(MATSimAppCommand.java:38) ~[application-2024.0.jar:?]
+	at org.matsim.application.CommandRunner.runCommand(CommandRunner.java:113) ~[application-2024.0.jar:?]
+	at org.matsim.application.CommandRunner.run(CommandRunner.java:93) [application-2024.0.jar:?]
+	at org.matsim.simwrapper.SimWrapper.run(SimWrapper.java:216) [simwrapper-2024.0.jar:?]
+	at org.matsim.simwrapper.SimWrapperListener.notifyShutdown(SimWrapperListener.java:139) [simwrapper-2024.0.jar:?]
+	at org.matsim.core.controler.ControlerListenerManagerImpl.fireControlerShutdownEvent(ControlerListenerManagerImpl.java:136) [matsim-2024.0.jar:?]
+	at org.matsim.core.controler.AbstractController$1.shutdown(AbstractController.java:89) [matsim-2024.0.jar:?]
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:88) [matsim-2024.0.jar:?]
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:53) [matsim-2024.0.jar:?]
+	at org.matsim.core.controler.AbstractController.run(AbstractController.java:92) [matsim-2024.0.jar:?]
+	at org.matsim.core.controler.NewControler.run(NewControler.java:83) [matsim-2024.0.jar:?]
+	at org.matsim.core.controler.Controler.run(Controler.java:259) [matsim-2024.0.jar:?]
+	at org.matsim.project.RunMatsim.main(RunMatsim.java:67) [classes/:?]
+Caused by: org.opengis.referencing.NoSuchAuthorityCodeException: No authority was defined for code "ATLANTIS". Did you forget "AUTHORITY:NUMBER"?
+	at org.geotools.referencing.factory.ManyAuthoritiesFactory.noSuchAuthority(ManyAuthoritiesFactory.java:513) ~[gt-referencing-29.5.jar:?]
+	at org.geotools.referencing.factory.ManyAuthoritiesFactory.getAuthorityFactory(ManyAuthoritiesFactory.java:493) ~[gt-referencing-29.5.jar:?]
+	at org.geotools.referencing.factory.ManyAuthoritiesFactory.getCRSAuthorityFactory(ManyAuthoritiesFactory.java:577) ~[gt-referencing-29.5.jar:?]
+	at org.geotools.referencing.factory.AuthorityFactoryAdapter.createCoordinateReferenceSystem(AuthorityFactoryAdapter.java:809) ~[gt-referencing-29.5.jar:?]
+	at org.geotools.referencing.factory.ThreadedAuthorityFactory.createCoordinateReferenceSystem(ThreadedAuthorityFactory.java:667) ~[gt-referencing-29.5.jar:?]
+	at org.geotools.referencing.DefaultAuthorityFactory.createCoordinateReferenceSystem(DefaultAuthorityFactory.java:178) ~[gt-referencing-29.5.jar:?]
+	at org.geotools.referencing.CRS.decode(CRS.java:542) ~[gt-referencing-29.5.jar:?]
+	at org.matsim.core.utils.geometry.geotools.MGC.getCRS(MGC.java:180) ~[matsim-2024.0.jar:?]
+	... 25 more
