@@ -25,7 +25,8 @@ hs_err_pid*
 *.iml
 
 
-
+/scenarios/*/output
+/Users/markuswienkemeier/Desktop/Uni/BA_neu/MatSim/my-matsim-example-project/scenarios/equil/output
 *.osm.pbf
 .osm.pbf
 /Users/markuswienkemeier/Desktop/Uni/BA_neu/MatSim/my-matsim-example-project/original-input-data/detmold-regbez-latest.osm.pbf
