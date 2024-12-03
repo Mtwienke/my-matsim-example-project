@@ -22,8 +22,10 @@ import org.apache.logging.log4j.core.tools.picocli.CommandLine;
 import org.matsim.api.core.v01.Scenario;
 import org.matsim.application.MATSimApplication;
 import org.matsim.core.config.Config;
+import org.matsim.core.config.ConfigUtils;
 import org.matsim.core.controler.Controler;
 import org.matsim.core.controler.OutputDirectoryHierarchy.OverwriteFileSetting;
+import org.matsim.contrib.drt.run.DrtConfigGroup;
 
 /**
  * @author nagel
@@ -44,7 +46,7 @@ public class RunMatsimApplication extends MATSimApplication {
 	protected Config prepareConfig(Config config) {
 
 		config.controller().setOverwriteFileSetting( OverwriteFileSetting.deleteDirectoryIfExists );
-
+		
 		// possibly modify config here
 
 		// ---

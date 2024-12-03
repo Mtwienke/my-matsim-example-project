@@ -29,7 +29,7 @@ def createPopulation(size):
         person = ET.SubElement(root, "person", id=str(i))
         plan = ET.SubElement(person, "plan")
         act = getRandomNode(nodeIdList, "home", plan, "6:00")
-        act = getRandomNode(nodeIdList, "home", plan, "16:00")
+        act = getRandomNode(nodeIdList, "work", plan, "16:00")
         act = getRandomNode(nodeIdList, "home", plan, False)
         
         #rough_string = ET.tostring(population, encoding="unicode")

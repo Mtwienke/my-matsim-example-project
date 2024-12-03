@@ -19,6 +19,8 @@
 package org.matsim.project;
 
 import org.matsim.api.core.v01.Scenario;
+import org.matsim.contrib.drt.optimizer.insertion.DrtInsertionSearchParams;
+import org.matsim.contrib.drt.run.DrtConfigGroup;
 import org.matsim.core.config.Config;
 import org.matsim.core.config.ConfigUtils;
 import org.matsim.core.controler.Controler;
@@ -42,6 +44,9 @@ public class RunMatsim{
 		}
 
 		config.controller().setOverwriteFileSetting( OverwriteFileSetting.deleteDirectoryIfExists );
+		
+		//insertionParams.setNumberOfThreads(4);
+        //insertionParams.setRejectionSamplingRate(0.1);
 
 		// possibly modify config here
 
